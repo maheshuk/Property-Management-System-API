@@ -1,0 +1,131 @@
+{
+   "RecordStatus":"Active",
+   "OriginalId":"Contact1",
+   "Id":"PMS1.Contact1",
+   "AdditionalIds":[
+      {
+         "IdValue":"ABC123",
+         "IdType":{
+            "Code":"IATANumber"
+         }
+      },
+      {
+         "IdValue":"TAX1234567",
+         "IdType":{
+            "Code":"TaxId"
+         }
+      }
+   ],
+   "VipStatus":{
+      "Name":"VIP Status1",
+      "Code":"VIP1"
+   },
+   "TransactionalCommPreferences":[
+
+   ],
+   "Title":"SVP, Operations",
+   "Suffix":"Jr.",
+   "StayPreferences":[
+
+   ],
+   "SpouseName":"Diana Young",
+   "Salutation":"Sir",
+   "Pronunciation":"Andy Yung",
+   "PhoneNumbers":[
+      {
+         "Priority":1,
+         "PhoneNumberType":{
+            "Code":"OfficeDirect"
+         },
+         "Phone":"6034578566",
+         "IsPrimary":true,
+         "Extension":"3423"
+      }
+   ],
+   "NumberOfChildren":3,
+   "MiddleName":"Flower",
+   "Memberships":[
+      {
+         "SignupDate":"2015-01-28",
+         "ProgramType":{
+            "Name":"ProgramType1",
+            "Code":"PROGTYPE1"
+         },
+         "ProgramCode":{
+            "Code":"PROG1"
+         },
+         "MembershipNumber":"MembershipNumber_1",
+         "MembershipLevel":{
+            "Name":"Membership Level1",
+            "Code":"MEMLEVEL1"
+         },
+         "ExpireDate":"2016-01-04",
+         "EffectiveDate":"2015-01-29",
+         "CurrentPointsDate":"2015-01-28",
+         "CurrentPoints":50
+      }
+   ],
+   "MarketingCommPreferences":[
+
+   ],
+   "MaritalStatus":{
+      "Code":"Married"
+   },
+   "LastName":"Young",
+   "LanguageCode":{
+      "Name":"English",
+      "Code":"EN"
+   },
+   "Initials":"AY",
+   "Honorific":"Mr.",
+   "Gender":{
+      "Code":"Male"
+   },
+   "FullName":"Andy Young",
+   "FirstName":"Andy",
+   "EmailAddresses":[
+
+   ],
+   "Department":"Internal Operations",
+   "DateOfBirth":"1966-01-01",
+   "Comments":[
+      {
+         "Originator":"PMSA",
+         "IsPublic":true,
+         "CommentType":{
+            "Name":"Comment Type1",
+            "Code":"CMTTYP1"
+         },
+         "CommentText":"Comment Type2. India got from the game the two points they needed to keep their chances of making the final alive after persistent rain ensured only 16 overs were bowled. Looking at the overcast skies and the tackiness underfoot, Australia's returning captain George Bailey put India in, and saw India struggle to 69 for 2 in 16 overs. Shikhar Dhawan clocked another failure, scoring 8 before gloving Mitchell Starc to first slip while trying to open the face of the bat. Ambati Rayudu didn't look at home batting at No. 3, and top-edged Mitchell Marsh while coming down the track and slashing.\r\n\r\nIndia might have issues, but they stayed alive in the tournament. Had they lost they would have been left with the task of beating England by a bonus point and also correcting their net run rate significantly in the final league match, to be played in Perth on Friday. India now have two points to England's five and Australia's 15. The India-England match is now a virtual semi-final.\r\n\r\nThere was more good news for India, in that they played their two injured bowlers, Ishant Sharma and Ravindra Jadeja. The two could be key to their World Cup plans. Rohit Sharma stayed out with a sore hamstring, but this will give him time to recover.",
+         "CommentDate":"2015-01-27T16:04:00.000Z"
+      },
+      {
+         "Originator":"PMSA",
+         "IsPublic":false,
+         "CommentType":{
+            "Name":"Comment Type2",
+            "Code":"CMTTYP2"
+         },
+         "CommentText":"Comment Text with chinese chracters:  1?26?,??????????,?????????????«??????»??????????,????????“????”,??????????“?????”???????????:“????«??????»???????”",
+         "CommentDate":"2015-01-28T16:07:00.000Z"
+      }
+   ],
+   "AssistantName":"Andy Young Sr.",
+   "AlternateTitle":"AY",
+   "AlternateSuffix":"Jr.",
+   "AlternateSalutation":"Sir",
+   "AlternateMiddleName":"Flower",
+   "AlternateLastName":"Young",
+   "AlternateLanguageCode":{
+      "Name":"Spanish",
+      "Code":"ES"
+   },
+   "AlternateHonorific":"Sir",
+   "AlternateFirstName":"Andrew",
+   "Addresses":[
+
+   ],
+   "AccountRelationships":[
+
+   ]
+}

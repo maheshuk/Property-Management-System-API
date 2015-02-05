@@ -1,0 +1,20 @@
+{
+  "Status" : "Failure",
+  "SenderType" : {
+    "Code" : "Nws"
+  },
+  "ResultMessages" : [ {
+    "ResourceType" : "PmsRoomBlock",
+    "ResourcePart" : "2",
+    "ResourceId" : "PMS1.PmsRoomBlock1",
+    "MessageCode" : {
+      "Code" : "Required Field Violation"
+    },
+    "Message" : "A required field is missing.",
+    "Level" : "Error"
+  } ],
+  "ResourceType" : "PmsRoomBlock",
+  "ResourceId" : "Pms1.PmsRoomBlock1",
+  "ExternalCreatedOn" : "2015-01-27T20:16:00.000Z",
+  "CreatedOn" : "2015-01-27T20:16:00.000Z"
+}

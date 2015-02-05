@@ -1,0 +1,20 @@
+{
+   "CreatedOn":"2015-01-30T18:25:08.8381329Z",
+   "ExternalCreatedOn":"2015-01-30T18:25:08.8381329Z",
+   "ResourceId":"PMS1.PmsRoomBlock1",
+   "ResourceType":"PmsRoomBlock",
+   "ResultMessages":[
+      {
+         "Level":"Info",
+         "Message":"Received message successfully",
+         "MessageCode":{
+            "Code":"SUCCESS",
+            "Name":"Successful"
+         },
+         "ResourceId":"PMS1.PmsRoomBlock1",
+         "ResourcePart":"PmsRoomBlock",
+         "ResourceType":"PmsRoomBlock"
+      }
+   ],
+   "Status":"Success"
+}

@@ -1,0 +1,26 @@
+[ 
+  {
+  "Subject" : "PmsRoom",
+  "SentOn" : "2015-02-05T22:33:00.000Z",
+  "ReceivedOn" : "2015-02-05T22:33:00.000Z",
+  "ReceivedCount" : 2,
+  "NotificationStatus" : "Committed",
+  "LastStatusChangeOn" : "2015-02-05T22:33:00.000Z",
+  "Id" : "Notification1[1234]",
+  "EntityType" : "PmsRoomBlock",
+  "EntityId" : "PmsRoomBlock1[1234]",
+  "CallbackUrl" : "https://naas-preview.newmarketinc.com/api/PmsRoomBlock/PmsRoomBlock1[1234]"
+}, 
+  {
+  "Subject" : "Reservation created in DelphiFDC",
+  "SentOn" : "2015-02-05T23:10:00.000Z",
+  "ReceivedOn" : "2015-02-05T23:10:00.000Z",
+  "ReceivedCount" : 1,
+  "NotificationStatus" : "Committed",
+  "LastStatusChangeOn" : "2015-02-05T23:10:00.000Z",
+  "Id" : "Notification2[1234]",
+  "EntityType" : "Reservation",
+  "EntityId" : "Reservation1[1234]",
+  "CallbackUrl" : "https://naas-preview.newmarketinc.com/api/Reservation/Reservation1[1234]"
+} 
+] 

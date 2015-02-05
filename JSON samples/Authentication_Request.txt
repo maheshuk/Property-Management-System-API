@@ -1,0 +1,7 @@
+{
+   "client_id": "[clientidvalue]",
+   "client_secret": "[clientsecretvalue]",
+   "grant_type": “password",
+   "password": "[passwordvalue]",
+   "username": "[usernamevalue]"
+}

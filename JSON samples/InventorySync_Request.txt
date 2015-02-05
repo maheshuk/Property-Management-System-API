@@ -1,0 +1,30 @@
+{
+  "LocationInfo" : {
+    "LocationCode" : {
+      "Name" : "Newmarket Portsmouth",
+      "Code" : "NMKTPORTS"
+    }
+  },
+  "InventorySyncDays" : [ {
+    "OutOfOrder" : 5,
+    "InventoryDate" : "2015-01-27",
+    "GuestroomTypeCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    }
+  }, {
+    "OutOfOrder" : 10,
+    "InventoryDate" : "2015-01-31",
+    "GuestroomTypeCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    }
+  }, {
+    "OutOfOrder" : 7,
+    "InventoryDate" : "2015-01-29",
+    "GuestroomTypeCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    }
+  } ]
+}

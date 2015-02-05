@@ -1,0 +1,85 @@
+{
+  "Status" : "CheckedOut",
+  "ReservationId" : "Res1234567890",
+  "ReservationActualDays" : [ {
+    "StayDate" : "2015-02-03",
+    "ReservationSource" : {
+      "Name" : "ReservationSource1",
+      "Code" : "RESSRC1"
+    },
+    "RateCode" : {
+      "Name" : "RateCode1",
+      "Code" : "RTCDE1"
+    },
+    "RateBeforeTax" : 100.00,
+    "RateAfterTax" : 120.00,
+    "PostedRevenue" : [ {
+      "RevenueType" : {
+        "Code" : "Other"
+      },
+      "Amount" : 200.00
+    }, {
+      "RevenueType" : {
+        "Code" : "FoodAndBeverage"
+      },
+      "Amount" : 100.00
+    } ],
+    "PmsRoomBlockId" : "PmsBlockId1",
+    "MarketSegment" : {
+      "Name" : "Automotive",
+      "Code" : "AUTO"
+    },
+    "GuestroomTypeOccupiedCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    },
+    "GuestroomTypeChargedCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    },
+    "GuestroomNumber" : "GRN123",
+    "CurrencyCode" : "USD"
+  }, {
+    "StayDate" : "2015-02-04",
+    "ReservationSource" : {
+      "Name" : "ReservationSource1",
+      "Code" : "RESSRC1"
+    },
+    "RateCode" : {
+      "Name" : "RateCode1",
+      "Code" : "RTCDE1"
+    },
+    "RateBeforeTax" : 120.00,
+    "RateAfterTax" : 150.00,
+    "PostedRevenue" : [ {
+      "RevenueType" : {
+        "Code" : "Other"
+      },
+      "Amount" : 123.01
+    }, {
+      "RevenueType" : {
+        "Code" : "FoodAndBeverage"
+      },
+      "Amount" : 90.56
+    } ],
+    "PmsRoomBlockId" : "PmsBlockId1",
+    "MarketSegment" : {
+      "Name" : "Automotive",
+      "Code" : "AUTO"
+    },
+    "GuestroomTypeOccupiedCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    },
+    "GuestroomTypeChargedCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    },
+    "GuestroomNumber" : "GRN123",
+    "CurrencyCode" : "USD"
+  } ],
+  "PmsStatus" : "CheckedOut",
+  "IsStayComplete" : true,
+  "DepartureDate" : "2015-02-02",
+  "ArrivalDate" : "2015-02-02"
+}
