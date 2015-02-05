@@ -1,20 +1,21 @@
 {
-   "CreatedOn":"2015-01-30T18:25:08.8381329Z",
-   "ExternalCreatedOn":"2015-01-30T18:25:08.8381329Z",
-   "ResourceId":"PMS1.PmsRoomBlock1",
-   "ResourceType":"PmsRoomBlock",
-   "ResultMessages":[
-      {
-         "Level":"Info",
-         "Message":"Received message successfully",
-         "MessageCode":{
-            "Code":"SUCCESS",
-            "Name":"Successful"
-         },
-         "ResourceId":"PMS1.PmsRoomBlock1",
-         "ResourcePart":"PmsRoomBlock",
-         "ResourceType":"PmsRoomBlock"
-      }
-   ],
-   "Status":"Success"
+  "Status" : "Accepted",
+  "SenderType" : {
+    "Code" : "Nws"
+  },
+  "ResultMessages" : [ {
+    "ResourceType" : "PmsRoomBlock",
+    "ResourcePart" : "1",
+    "ResourceId" : "PMS1.PmsRoomBlock1",
+    "MessageCode" : {
+      "Name" : "Message was accepted for further processing",
+      "Code" : "Accepted"
+    },
+    "Message" : "Message was accepted and queued for further processing.",
+    "Level" : "Info"
+  } ],
+  "ResourceType" : "PmsRoomBlock",
+  "ResourceId" : "PMS1.PmsRoomBlock1",
+  "ExternalCreatedOn" : "2015-02-05T23:34:00.000Z",
+  "CreatedOn" : "2015-02-05T23:34:00.000Z"
 }
