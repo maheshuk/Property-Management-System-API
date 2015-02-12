@@ -1,11 +1,31 @@
 {
+  "ExtendedAttributes" : [ {
+    "Value" : "Value1",
+    "Name" : "SMS_UDF1"
+  } ],
   "RecordStatus" : "Active",
   "OriginalId" : "PmsRoomBlock1",
   "Id" : "PMS1.PmsRoomBlock1",
   "ExternalModifiedOn" : "2015-01-27T20:00:00.000Z",
   "ExternalCreatedOn" : "2015-01-27T20:00:00.000Z",
-  "AdditionalIds" : [ ],
-  "TeamMembers" : [ ],
+  "AdditionalIds" : [ {
+    "IdValue" : "IATA Value",
+    "IdType" : {
+      "Code" : "IATANumber"
+    }
+  }, {
+    "IdValue" : "taxIdValue1",
+    "IdType" : {
+      "Code" : "TaxId"
+    }
+  } ],
+  "TeamMembers" : [ {
+    "Role" : {
+      "Code" : "CateringManager"
+    },
+    "Name" : "Andy Young",
+    "Initials" : "AY"
+  } ],
   "Status" : "Prospect",
   "StartDate" : "2015-01-27",
   "RateCode" : {
@@ -65,6 +85,16 @@
       "OriginalId" : "Contact1",
       "Id" : "PMS1.Contact1",
       "AdditionalIds" : [ {
+        "IdValue" : "IATA Value",
+        "IdType" : {
+          "Code" : "IATANumber"
+        }
+      }, {
+        "IdValue" : "taxIdValue1",
+        "IdType" : {
+          "Code" : "TaxId"
+        }
+      }, {
         "IdValue" : "ABC123",
         "IdType" : {
           "Code" : "IATANumber"
@@ -79,10 +109,43 @@
         "Name" : "VIP Status1",
         "Code" : "VIP1"
       },
-      "TransactionalCommPreferences" : [ ],
+      "TransactionalCommPreferences" : [ {
+        "StayType" : [ "Business", "Personal" ],
+        "PhoneNumber" : "603-911-911",
+        "LocationCode" : [ {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        }, {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        } ],
+        "Email" : "ayoung@test.com",
+        "CommunicationTypes" : [ "PreStay", "PostStay", "Confirmation", "Cancellation", "InHouse" ],
+        "CommunicationOptInOut" : "OptIn",
+        "CommunicationMethod" : "Email",
+        "CommunicationFormat" : "Text"
+      } ],
       "Title" : "SVP, Operations",
       "Suffix" : "Jr.",
-      "StayPreferences" : [ ],
+      "StayPreferences" : [ {
+        "StayType" : [ "Business", "Personal" ],
+        "PreferenceValue" : "PreferenceValue",
+        "PreferenceCode" : {
+          "Name" : "Preference Code1",
+          "Code" : "PREFCODE1"
+        },
+        "PreferenceCategory" : {
+          "Name" : "Preference Category1",
+          "Code" : "PREFCAT1"
+        },
+        "LocationCode" : [ {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        }, {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        } ]
+      } ],
       "SpouseName" : "Diana Young",
       "Salutation" : "Sir",
       "Pronunciation" : "Andy Yung",
@@ -116,15 +179,40 @@
         "CurrentPointsDate" : "2015-01-28",
         "CurrentPoints" : 50
       } ],
-      "MarketingCommPreferences" : [ ],
+      "MarketingCommPreferences" : [ {
+        "PhoneNumber" : "603-911-911",
+        "LocationCode" : [ {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        } ],
+        "Email" : "ayoung@test.com",
+        "CommunicationOptInOut" : "OptIn",
+        "CommunicationMethod" : "Email",
+        "CommunicationFrequency" : "Weekly",
+        "CommunicationFormat" : "Text"
+      } ],
       "MaritalStatus" : {
         "Code" : "Married"
       },
+      "Locations" : [ {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      } ],
       "LastName" : "Young",
       "LanguageCode" : {
         "Name" : "English",
         "Code" : "EN"
       },
+      "IsGlobal" : false,
       "Initials" : "AY",
       "Honorific" : "Mr.",
       "Gender" : {
@@ -132,10 +220,25 @@
       },
       "FullName" : "Andy Young",
       "FirstName" : "Andy",
-      "EmailAddresses" : [ ],
+      "EmailAddresses" : [ {
+        "IsPrimary" : true,
+        "EmailAddressType" : {
+          "Code" : "Business"
+        },
+        "Address" : "ayoung@test.com"
+      } ],
       "Department" : "Internal Operations",
       "DateOfBirth" : "1966-01-01",
       "Comments" : [ {
+        "Originator" : "Andy Young",
+        "IsPublic" : true,
+        "CommentType" : {
+          "Name" : "Comment Type2",
+          "Code" : "CMTTYP2"
+        },
+        "CommentText" : "Comment text goes here",
+        "CommentDate" : "2015-02-10T19:04:00.000Z"
+      }, {
         "Originator" : "PMSA",
         "IsPublic" : true,
         "CommentType" : {
@@ -166,8 +269,37 @@
       },
       "AlternateHonorific" : "Sir",
       "AlternateFirstName" : "Andrew",
-      "Addresses" : [ ],
-      "AccountRelationships" : [ ]
+      "Addresses" : [ {
+        "StateProvince" : "NH",
+        "PostalCode" : "03801",
+        "Longitude" : 70.76060,
+        "Lattitude" : 43.07560,
+        "IsPrimary" : true,
+        "CountryCode" : {
+          "Code" : "US"
+        },
+        "Country" : "United States",
+        "City" : "Portsmouth",
+        "AlternateStateProvince" : "NH",
+        "AlternatePostalCode" : "03801",
+        "AlternateCountry" : "United States",
+        "AlternateCity" : "Portsmouth",
+        "AlternateAddressLine3" : "1st Floor",
+        "AlternateAddressLine2" : "STE 100",
+        "AlternateAddressLine1" : "135 Commerce Way",
+        "AddressType" : {
+          "Code" : "Mailing"
+        },
+        "AddressLine3" : "2nd Floor",
+        "AddressLine2" : "STE 300",
+        "AddressLine1" : "75 NH Ave"
+      } ],
+      "AccountRelationships" : [ {
+        "Role" : {
+          "Code" : "Customer"
+        },
+        "AccountId" : "001o0000009z81qAAA"
+      } ]
     }
   }, {
     "ContactRole" : {
@@ -178,6 +310,16 @@
       "OriginalId" : "Contact1",
       "Id" : "PMS1.Contact1",
       "AdditionalIds" : [ {
+        "IdValue" : "IATA Value",
+        "IdType" : {
+          "Code" : "IATANumber"
+        }
+      }, {
+        "IdValue" : "taxIdValue1",
+        "IdType" : {
+          "Code" : "TaxId"
+        }
+      }, {
         "IdValue" : "ABC123",
         "IdType" : {
           "Code" : "IATANumber"
@@ -192,10 +334,43 @@
         "Name" : "VIP Status1",
         "Code" : "VIP1"
       },
-      "TransactionalCommPreferences" : [ ],
+      "TransactionalCommPreferences" : [ {
+        "StayType" : [ "Business", "Personal" ],
+        "PhoneNumber" : "603-911-911",
+        "LocationCode" : [ {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        }, {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        } ],
+        "Email" : "ayoung@test.com",
+        "CommunicationTypes" : [ "PreStay", "PostStay", "Confirmation", "Cancellation", "InHouse" ],
+        "CommunicationOptInOut" : "OptIn",
+        "CommunicationMethod" : "Email",
+        "CommunicationFormat" : "Text"
+      } ],
       "Title" : "SVP, Operations",
       "Suffix" : "Jr.",
-      "StayPreferences" : [ ],
+      "StayPreferences" : [ {
+        "StayType" : [ "Business", "Personal" ],
+        "PreferenceValue" : "PreferenceValue",
+        "PreferenceCode" : {
+          "Name" : "Preference Code1",
+          "Code" : "PREFCODE1"
+        },
+        "PreferenceCategory" : {
+          "Name" : "Preference Category1",
+          "Code" : "PREFCAT1"
+        },
+        "LocationCode" : [ {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        }, {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        } ]
+      } ],
       "SpouseName" : "Diana Young",
       "Salutation" : "Sir",
       "Pronunciation" : "Andy Yung",
@@ -229,15 +404,40 @@
         "CurrentPointsDate" : "2015-01-28",
         "CurrentPoints" : 50
       } ],
-      "MarketingCommPreferences" : [ ],
+      "MarketingCommPreferences" : [ {
+        "PhoneNumber" : "603-911-911",
+        "LocationCode" : [ {
+          "Name" : "Tampa Property",
+          "Code" : "Loc1"
+        } ],
+        "Email" : "ayoung@test.com",
+        "CommunicationOptInOut" : "OptIn",
+        "CommunicationMethod" : "Email",
+        "CommunicationFrequency" : "Weekly",
+        "CommunicationFormat" : "Text"
+      } ],
       "MaritalStatus" : {
         "Code" : "Married"
       },
+      "Locations" : [ {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      } ],
       "LastName" : "Young",
       "LanguageCode" : {
         "Name" : "English",
         "Code" : "EN"
       },
+      "IsGlobal" : false,
       "Initials" : "AY",
       "Honorific" : "Mr.",
       "Gender" : {
@@ -245,10 +445,25 @@
       },
       "FullName" : "Andy Young",
       "FirstName" : "Andy",
-      "EmailAddresses" : [ ],
+      "EmailAddresses" : [ {
+        "IsPrimary" : true,
+        "EmailAddressType" : {
+          "Code" : "Business"
+        },
+        "Address" : "ayoung@test.com"
+      } ],
       "Department" : "Internal Operations",
       "DateOfBirth" : "1966-01-01",
       "Comments" : [ {
+        "Originator" : "Andy Young",
+        "IsPublic" : true,
+        "CommentType" : {
+          "Name" : "Comment Type2",
+          "Code" : "CMTTYP2"
+        },
+        "CommentText" : "Comment text goes here",
+        "CommentDate" : "2015-02-10T19:04:00.000Z"
+      }, {
         "Originator" : "PMSA",
         "IsPublic" : true,
         "CommentType" : {
@@ -279,11 +494,49 @@
       },
       "AlternateHonorific" : "Sir",
       "AlternateFirstName" : "Andrew",
-      "Addresses" : [ ],
-      "AccountRelationships" : [ ]
+      "Addresses" : [ {
+        "StateProvince" : "NH",
+        "PostalCode" : "03801",
+        "Longitude" : 70.76060,
+        "Lattitude" : 43.07560,
+        "IsPrimary" : true,
+        "CountryCode" : {
+          "Code" : "US"
+        },
+        "Country" : "United States",
+        "City" : "Portsmouth",
+        "AlternateStateProvince" : "NH",
+        "AlternatePostalCode" : "03801",
+        "AlternateCountry" : "United States",
+        "AlternateCity" : "Portsmouth",
+        "AlternateAddressLine3" : "1st Floor",
+        "AlternateAddressLine2" : "STE 100",
+        "AlternateAddressLine1" : "135 Commerce Way",
+        "AddressType" : {
+          "Code" : "Mailing"
+        },
+        "AddressLine3" : "2nd Floor",
+        "AddressLine2" : "STE 300",
+        "AddressLine1" : "75 NH Ave"
+      } ],
+      "AccountRelationships" : [ {
+        "Role" : {
+          "Code" : "Customer"
+        },
+        "AccountId" : "001o0000009z81qAAA"
+      } ]
     }
   } ],
-  "Comments" : [ ],
+  "Comments" : [ {
+    "Originator" : "Andy Young",
+    "IsPublic" : true,
+    "CommentType" : {
+      "Name" : "Comment Type2",
+      "Code" : "CMTTYP2"
+    },
+    "CommentText" : "Comment text goes here",
+    "CommentDate" : "2015-02-10T19:04:00.000Z"
+  } ],
   "BookingType" : {
     "Name" : "BookingType1",
     "Code" : "BKGTYP1"
@@ -300,12 +553,32 @@
       "Code" : "Company"
     },
     "Account" : {
+      "ExtendedAttributes" : [ {
+        "Value" : "ExtendedAttrValue",
+        "Name" : "Extd1"
+      }, {
+        "Value" : "Value1",
+        "Name" : "SMS_UDF1"
+      }, {
+        "Value" : "Value2",
+        "Name" : "SMS_UDF2"
+      } ],
       "RecordStatus" : "Active",
       "OriginalId" : "48392650",
       "Id" : "48392650",
       "ExternalModifiedOn" : "2015-01-16T16:09:00.000Z",
       "ExternalCreatedOn" : "2015-01-01T16:09:00.000Z",
       "AdditionalIds" : [ {
+        "IdValue" : "IATA Value",
+        "IdType" : {
+          "Code" : "IATANumber"
+        }
+      }, {
+        "IdValue" : "taxIdValue1",
+        "IdType" : {
+          "Code" : "TaxId"
+        }
+      }, {
         "IdValue" : "TAX1234567",
         "IdType" : {
           "Code" : "TaxId"
@@ -313,6 +586,12 @@
       } ],
       "WebSiteUrl" : "http://burlington.com",
       "TeamMembers" : [ {
+        "Role" : {
+          "Code" : "CateringManager"
+        },
+        "Name" : "Andy Young",
+        "Initials" : "AY"
+      }, {
         "Role" : {
           "Code" : "Owner"
         },
@@ -360,6 +639,22 @@
         "Name" : "Automotive",
         "Code" : "AUTO"
       },
+      "Locations" : [ {
+        "Name" : "Newmarket Portsmouth",
+        "Code" : "NMKTPORTS"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      } ],
       "LeadSource" : {
         "Code" : "WEB"
       },
@@ -367,9 +662,19 @@
         "Name" : "English",
         "Code" : "EN"
       },
+      "IsGlobal" : true,
       "DUNSNumber" : "123456789",
       "CommissionPercentage" : 5.50,
       "Comments" : [ {
+        "Originator" : "Andy Young",
+        "IsPublic" : true,
+        "CommentType" : {
+          "Name" : "Comment Type2",
+          "Code" : "CMTTYP2"
+        },
+        "CommentText" : "Comment text goes here",
+        "CommentDate" : "2015-02-10T19:04:00.000Z"
+      }, {
         "Originator" : "PMSA",
         "IsPublic" : true,
         "CommentType" : {
@@ -394,6 +699,30 @@
         "Code" : "ES"
       },
       "Addresses" : [ {
+        "StateProvince" : "NH",
+        "PostalCode" : "03801",
+        "Longitude" : 70.76060,
+        "Lattitude" : 43.07560,
+        "IsPrimary" : true,
+        "CountryCode" : {
+          "Code" : "US"
+        },
+        "Country" : "United States",
+        "City" : "Portsmouth",
+        "AlternateStateProvince" : "NH",
+        "AlternatePostalCode" : "03801",
+        "AlternateCountry" : "United States",
+        "AlternateCity" : "Portsmouth",
+        "AlternateAddressLine3" : "1st Floor",
+        "AlternateAddressLine2" : "STE 100",
+        "AlternateAddressLine1" : "135 Commerce Way",
+        "AddressType" : {
+          "Code" : "Mailing"
+        },
+        "AddressLine3" : "2nd Floor",
+        "AddressLine2" : "STE 300",
+        "AddressLine1" : "75 NH Ave"
+      }, {
         "StateProvince" : "NC",
         "PostalCode" : "27215",
         "IsPrimary" : true,
@@ -422,7 +751,12 @@
         },
         "AddressLine1" : "75 New Hampshire"
       } ],
-      "AccountRelationships" : [ ],
+      "AccountRelationships" : [ {
+        "Role" : {
+          "Code" : "Customer"
+        },
+        "AccountId" : "001o0000009z81qAAA"
+      } ],
       "Abbreviation" : "BTC"
     }
   }, {
@@ -430,12 +764,32 @@
       "Code" : "Company"
     },
     "Account" : {
+      "ExtendedAttributes" : [ {
+        "Value" : "ExtendedAttrValue",
+        "Name" : "Extd1"
+      }, {
+        "Value" : "Value1",
+        "Name" : "SMS_UDF1"
+      }, {
+        "Value" : "Value2",
+        "Name" : "SMS_UDF2"
+      } ],
       "RecordStatus" : "Active",
       "OriginalId" : "48392650",
       "Id" : "48392650",
       "ExternalModifiedOn" : "2015-01-16T16:09:00.000Z",
       "ExternalCreatedOn" : "2015-01-01T16:09:00.000Z",
       "AdditionalIds" : [ {
+        "IdValue" : "IATA Value",
+        "IdType" : {
+          "Code" : "IATANumber"
+        }
+      }, {
+        "IdValue" : "taxIdValue1",
+        "IdType" : {
+          "Code" : "TaxId"
+        }
+      }, {
         "IdValue" : "TAX1234567",
         "IdType" : {
           "Code" : "TaxId"
@@ -443,6 +797,12 @@
       } ],
       "WebSiteUrl" : "http://burlington.com",
       "TeamMembers" : [ {
+        "Role" : {
+          "Code" : "CateringManager"
+        },
+        "Name" : "Andy Young",
+        "Initials" : "AY"
+      }, {
         "Role" : {
           "Code" : "Owner"
         },
@@ -490,6 +850,22 @@
         "Name" : "Automotive",
         "Code" : "AUTO"
       },
+      "Locations" : [ {
+        "Name" : "Newmarket Portsmouth",
+        "Code" : "NMKTPORTS"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      }, {
+        "Name" : "Tampa Property",
+        "Code" : "Loc1"
+      } ],
       "LeadSource" : {
         "Code" : "WEB"
       },
@@ -497,9 +873,19 @@
         "Name" : "English",
         "Code" : "EN"
       },
+      "IsGlobal" : true,
       "DUNSNumber" : "123456789",
       "CommissionPercentage" : 5.50,
       "Comments" : [ {
+        "Originator" : "Andy Young",
+        "IsPublic" : true,
+        "CommentType" : {
+          "Name" : "Comment Type2",
+          "Code" : "CMTTYP2"
+        },
+        "CommentText" : "Comment text goes here",
+        "CommentDate" : "2015-02-10T19:04:00.000Z"
+      }, {
         "Originator" : "PMSA",
         "IsPublic" : true,
         "CommentType" : {
@@ -524,6 +910,30 @@
         "Code" : "ES"
       },
       "Addresses" : [ {
+        "StateProvince" : "NH",
+        "PostalCode" : "03801",
+        "Longitude" : 70.76060,
+        "Lattitude" : 43.07560,
+        "IsPrimary" : true,
+        "CountryCode" : {
+          "Code" : "US"
+        },
+        "Country" : "United States",
+        "City" : "Portsmouth",
+        "AlternateStateProvince" : "NH",
+        "AlternatePostalCode" : "03801",
+        "AlternateCountry" : "United States",
+        "AlternateCity" : "Portsmouth",
+        "AlternateAddressLine3" : "1st Floor",
+        "AlternateAddressLine2" : "STE 100",
+        "AlternateAddressLine1" : "135 Commerce Way",
+        "AddressType" : {
+          "Code" : "Mailing"
+        },
+        "AddressLine3" : "2nd Floor",
+        "AddressLine2" : "STE 300",
+        "AddressLine1" : "75 NH Ave"
+      }, {
         "StateProvince" : "NC",
         "PostalCode" : "27215",
         "IsPrimary" : true,
@@ -552,7 +962,12 @@
         },
         "AddressLine1" : "75 New Hampshire"
       } ],
-      "AccountRelationships" : [ ],
+      "AccountRelationships" : [ {
+        "Role" : {
+          "Code" : "Customer"
+        },
+        "AccountId" : "001o0000009z81qAAA"
+      } ],
       "Abbreviation" : "BTC"
     }
   } ]
