@@ -4,6 +4,7 @@
     "Code" : "Nws"
   },
   "ResultMessages" : [ {
+    "Timestamp" : "2015-02-23T13:29:00.000Z",
     "ResourceType" : "PmsRoomBlock",
     "ResourcePart" : "2",
     "ResourceId" : "PMS1.PmsRoomBlock1",
@@ -15,6 +16,12 @@
   } ],
   "ResourceType" : "PmsRoomBlock",
   "ResourceId" : "Pms1.PmsRoomBlock1",
+  "LocationInfo" : {
+    "LocationCode" : {
+      "Name" : "Newmarket Portsmouth",
+      "Code" : "NMKTPORTS"
+    }
+  },
   "ExternalCreatedOn" : "2015-01-27T20:16:00.000Z",
   "CreatedOn" : "2015-01-27T20:16:00.000Z"
 }

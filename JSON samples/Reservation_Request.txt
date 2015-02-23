@@ -56,6 +56,16 @@
       "Name" : "Capital One CC",
       "Code" : "Credit Card"
     },
+    "PackageCodes" : [ {
+      "StartDate" : "2015-02-03",
+      "Quantity" : 12,
+      "Price" : 334,
+      "PackageCode" : {
+        "Name" : "Golf",
+        "Code" : "GLF"
+      },
+      "NumberofDays" : 10
+    } ],
     "NumberOfDays" : 10,
     "MarketSegment" : {
       "Name" : "Automotive",
@@ -802,6 +812,22 @@
         "AddressLine2" : "STE 300",
         "AddressLine1" : "75 NH Ave"
       }, {
+        "StateProvince" : "UT",
+        "PostalCode" : "23564",
+        "IsPrimary" : true,
+        "Country" : "US",
+        "City" : "Salt Lake City",
+        "AlternateStateProvince" : "UT",
+        "AlternatePostalCode" : "23564",
+        "AlternateCountry" : "US",
+        "AlternateCity" : "Salt Lake City",
+        "AlternateAddressLine1" : "44 Another Rd",
+        "AddressType" : {
+          "Name" : "Primary",
+          "Code" : "Primary"
+        },
+        "AddressLine1" : "456 Old Stage Rd"
+      }, {
         "StateProvince" : "NC",
         "PostalCode" : "27215",
         "IsPrimary" : true,
@@ -1013,6 +1039,22 @@
         "AddressLine3" : "2nd Floor",
         "AddressLine2" : "STE 300",
         "AddressLine1" : "75 NH Ave"
+      }, {
+        "StateProvince" : "UT",
+        "PostalCode" : "23564",
+        "IsPrimary" : true,
+        "Country" : "US",
+        "City" : "Salt Lake City",
+        "AlternateStateProvince" : "UT",
+        "AlternatePostalCode" : "23564",
+        "AlternateCountry" : "US",
+        "AlternateCity" : "Salt Lake City",
+        "AlternateAddressLine1" : "44 Another Rd",
+        "AddressType" : {
+          "Name" : "Primary",
+          "Code" : "Primary"
+        },
+        "AddressLine1" : "456 Old Stage Rd"
       }, {
         "StateProvince" : "NC",
         "PostalCode" : "27215",
