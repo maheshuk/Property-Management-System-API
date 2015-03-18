@@ -1,3 +1,11 @@
+POST https://naas-dev.newmarketinc.com/pms/PMSRoomBlock HTTP/1.1
+Content-Type: application/json
+Authorization: OAuth YbwwFwyA1k18fg5d0fDyCdSvJ7E+Lg4yHGPJeEKfFdKj2OPvDYbn6ZMTyF0WpFa9qQLLcSA7C5u1urLw0HfnN1ATfClDBySQh2towqiE/VmM0/En1Kr2zet6qxaq6NMFjCA+mSQ8MwEnss9xi0ZGO9oqX/oihErldQ5z0eOLq42epJkKpB/az6AQpxWlUswD0l+HyhvtgJHcucfCCAuC4Zk4rgpK0d0NuIRk9mFxTRsM1wMCAj6qH89Ng1UWzipUfYw4fL9/JrqD1LegOc216Kp2in4HjLkvw4OxiLMHT5iKm60XZcWutvz6qLtMnUfC4Qt5VsR9OZoO1vsCp0PGIKU+wiiKUJreBtDTX0oPsi4iHZrjeGEDGXV35h0yPt2hzwB2/QnHFkLaic7ESzFRL4U+pmoaeLwOnT2cnTSFySBn4Dkf/RErGH/zdK0tfKBx9NOiORwXdD90en8d/zVogaoNR0VAkTz5boH0HvhNMDCAPPk/jLnMflU7nEzAM9MhiE7FCRLPIfLQ3aQNOwbwvPTAcbrd+fd86JLfOhgEHOPMnaWRwVq8z5gezpfjjhDDhxIGSo1DNE83NQdcLImA6+dEls0iXTFQyg6xclqysT0KhSq+1n7ZtaAWH3fxi/bclSMaT+hVYOsgyAcx/Hn1vQ7VGN8g0vFxl6Utf8hu2Hh2MoXEsigR/uCt6TmFZA9NpbOUovlyXu4Y/iUC5oQbf1toL1g+Gdcn7sisnyiyZvPwzaw8o45gnPhRf9mlh4MN1q62lH/cRJw40GNoyd8/t82GPvfTIAoi/KesA2DTr1+Uktp16CiCeUQWB0+21zTany14RRf3ngm7YwVij2IJtO48Jl9tZ/cZdwr9htx/MJfZXhDAGubmn1TDsp03UUoY
+Host: naas-dev.newmarketinc.com
+Content-Length: 35746
+Expect: 100-continue
+Connection: Close
+
 {
   "ExtendedAttributes" : [ {
     "Value" : "Value1",
@@ -5,7 +13,7 @@
   } ],
   "RecordStatus" : "Active",
   "OriginalId" : "PmsRoomBlock1",
-  "Id" : "PMS1.PmsRoomBlock1",
+  "Id" : "PMS1.PmsRoomBlock1_Test1",
   "ExternalModifiedOn" : "2015-01-27T20:00:00.000Z",
   "ExternalCreatedOn" : "2015-01-27T20:00:00.000Z",
   "AdditionalIds" : [ {
@@ -33,19 +41,19 @@
     "Code" : "RTCDE1"
   },
   "PmsRoomNights" : [ {
-    "StartDate" : "2015-01-27",
-    "RoomTypeCode" : {
-      "Name" : "GuestroomType1",
-      "Code" : "GRTYPE1"
-    },
-    "NumberOfDays" : 5
-  }, {
     "StartDate" : "2015-01-28",
     "RoomTypeCode" : {
       "Name" : "GuestroomType1",
       "Code" : "GRTYPE1"
     },
     "NumberOfDays" : 8
+  }, {
+    "StartDate" : "2015-01-27",
+    "RoomTypeCode" : {
+      "Name" : "GuestroomType1",
+      "Code" : "GRTYPE1"
+    },
+    "NumberOfDays" : 5
   } ],
   "PmsCode" : "pmsCode123",
   "PackageCodes" : [ ],
@@ -114,10 +122,10 @@
         "PhoneNumber" : "603-911-911",
         "LocationCode" : [ {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         }, {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         } ],
         "Email" : "ayoung@test.com",
         "CommunicationTypes" : [ "PreStay", "PostStay", "Confirmation", "Cancellation", "InHouse" ],
@@ -140,10 +148,10 @@
         },
         "LocationCode" : [ {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         }, {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         } ]
       } ],
       "SpouseName" : "Diana Young",
@@ -161,6 +169,25 @@
       "NumberOfChildren" : 3,
       "MiddleName" : "Flower",
       "Memberships" : [ {
+        "SignupDate" : "2015-03-13",
+        "ProgramType" : {
+          "Name" : "ProgramType1",
+          "Code" : "PROGTYPE1"
+        },
+        "ProgramCode" : {
+          "Name" : "Default Program Code",
+          "Code" : "PROGRAM"
+        },
+        "MembershipNumber" : "12345",
+        "MembershipLevel" : {
+          "Name" : "Default Membership Level",
+          "Code" : "LEVEL"
+        },
+        "ExpireDate" : "2015-03-31",
+        "EffectiveDate" : "2015-03-13",
+        "CurrentPointsDate" : "2015-03-13",
+        "CurrentPoints" : 50
+      }, {
         "SignupDate" : "2015-01-28",
         "ProgramType" : {
           "Name" : "ProgramType1",
@@ -183,7 +210,7 @@
         "PhoneNumber" : "603-911-911",
         "LocationCode" : [ {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         } ],
         "Email" : "ayoung@test.com",
         "CommunicationOptInOut" : "OptIn",
@@ -196,16 +223,16 @@
       },
       "Locations" : [ {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       } ],
       "LastName" : "Young",
       "LanguageCode" : {
@@ -218,7 +245,6 @@
       "Gender" : {
         "Code" : "Male"
       },
-      "FullName" : "Andy Young",
       "FirstName" : "Andy",
       "EmailAddresses" : [ {
         "IsPrimary" : true,
@@ -254,7 +280,7 @@
           "Name" : "Comment Type2",
           "Code" : "CMTTYP2"
         },
-        "CommentText" : "Comment Text with chinese chracters:  1?26?,??????????,?????????????�??????�??????????,????????�????�,??????????�?????�???????????:�????�??????�???????�",
+        "CommentText" : "Comment Text with chinese chracters:  1月26日，李克强主持召开座谈会，听取专家学者和企业界人士对《政府工作报告》的意见建议。李克强说，政府不能总给市场“发号施令”，而要集中精力做好自己“该做的工作”。他开门见山对参会者说：“请各位为《政府工作报告》提出宝贵意见。”",
         "CommentDate" : "2015-01-28T16:07:00.000Z"
       } ],
       "AssistantName" : "Andy Young Sr.",
@@ -339,10 +365,10 @@
         "PhoneNumber" : "603-911-911",
         "LocationCode" : [ {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         }, {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         } ],
         "Email" : "ayoung@test.com",
         "CommunicationTypes" : [ "PreStay", "PostStay", "Confirmation", "Cancellation", "InHouse" ],
@@ -365,10 +391,10 @@
         },
         "LocationCode" : [ {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         }, {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         } ]
       } ],
       "SpouseName" : "Diana Young",
@@ -386,6 +412,25 @@
       "NumberOfChildren" : 3,
       "MiddleName" : "Flower",
       "Memberships" : [ {
+        "SignupDate" : "2015-03-13",
+        "ProgramType" : {
+          "Name" : "ProgramType1",
+          "Code" : "PROGTYPE1"
+        },
+        "ProgramCode" : {
+          "Name" : "Default Program Code",
+          "Code" : "PROGRAM"
+        },
+        "MembershipNumber" : "12345",
+        "MembershipLevel" : {
+          "Name" : "Default Membership Level",
+          "Code" : "LEVEL"
+        },
+        "ExpireDate" : "2015-03-31",
+        "EffectiveDate" : "2015-03-13",
+        "CurrentPointsDate" : "2015-03-13",
+        "CurrentPoints" : 50
+      }, {
         "SignupDate" : "2015-01-28",
         "ProgramType" : {
           "Name" : "ProgramType1",
@@ -408,7 +453,7 @@
         "PhoneNumber" : "603-911-911",
         "LocationCode" : [ {
           "Name" : "Tampa Property",
-          "Code" : "Loc1"
+          "Code" : "242848"
         } ],
         "Email" : "ayoung@test.com",
         "CommunicationOptInOut" : "OptIn",
@@ -421,16 +466,16 @@
       },
       "Locations" : [ {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       } ],
       "LastName" : "Young",
       "LanguageCode" : {
@@ -443,7 +488,6 @@
       "Gender" : {
         "Code" : "Male"
       },
-      "FullName" : "Andy Young",
       "FirstName" : "Andy",
       "EmailAddresses" : [ {
         "IsPrimary" : true,
@@ -479,7 +523,7 @@
           "Name" : "Comment Type2",
           "Code" : "CMTTYP2"
         },
-        "CommentText" : "Comment Text with chinese chracters:  1?26?,??????????,?????????????�??????�??????????,????????�????�,??????????�?????�???????????:�????�??????�???????�",
+        "CommentText" : "Comment Text with chinese chracters:  1月26日，李克强主持召开座谈会，听取专家学者和企业界人士对《政府工作报告》的意见建议。李克强说，政府不能总给市场“发号施令”，而要集中精力做好自己“该做的工作”。他开门见山对参会者说：“请各位为《政府工作报告》提出宝贵意见。”",
         "CommentDate" : "2015-01-28T16:07:00.000Z"
       } ],
       "AssistantName" : "Andy Young Sr.",
@@ -644,16 +688,16 @@
         "Code" : "NMKTPORTS"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       } ],
       "LeadSource" : {
         "Code" : "WEB"
@@ -690,7 +734,7 @@
           "Name" : "Comment Type2",
           "Code" : "CMTTYP2"
         },
-        "CommentText" : "Comment Text with chinese chracters:  1?26?,??????????,?????????????�??????�??????????,????????�????�,??????????�?????�???????????:�????�??????�???????�",
+        "CommentText" : "Comment Text with chinese chracters:  1月26日，李克强主持召开座谈会，听取专家学者和企业界人士对《政府工作报告》的意见建议。李克强说，政府不能总给市场“发号施令”，而要集中精力做好自己“该做的工作”。他开门见山对参会者说：“请各位为《政府工作报告》提出宝贵意见。”",
         "CommentDate" : "2015-01-28T16:07:00.000Z"
       } ],
       "AlternateName" : "BText",
@@ -722,6 +766,22 @@
         "AddressLine3" : "2nd Floor",
         "AddressLine2" : "STE 300",
         "AddressLine1" : "75 NH Ave"
+      }, {
+        "StateProvince" : "UT",
+        "PostalCode" : "23564",
+        "IsPrimary" : true,
+        "Country" : "US",
+        "City" : "Salt Lake City",
+        "AlternateStateProvince" : "UT",
+        "AlternatePostalCode" : "23564",
+        "AlternateCountry" : "US",
+        "AlternateCity" : "Salt Lake City",
+        "AlternateAddressLine1" : "44 Another Rd",
+        "AddressType" : {
+          "Name" : "Primary",
+          "Code" : "Primary"
+        },
+        "AddressLine1" : "456 Old Stage Rd"
       }, {
         "StateProvince" : "NC",
         "PostalCode" : "27215",
@@ -855,16 +915,16 @@
         "Code" : "NMKTPORTS"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       }, {
         "Name" : "Tampa Property",
-        "Code" : "Loc1"
+        "Code" : "242848"
       } ],
       "LeadSource" : {
         "Code" : "WEB"
@@ -901,7 +961,7 @@
           "Name" : "Comment Type2",
           "Code" : "CMTTYP2"
         },
-        "CommentText" : "Comment Text with chinese chracters:  1?26?,??????????,?????????????�??????�??????????,????????�????�,??????????�?????�???????????:�????�??????�???????�",
+        "CommentText" : "Comment Text with chinese chracters:  1月26日，李克强主持召开座谈会，听取专家学者和企业界人士对《政府工作报告》的意见建议。李克强说，政府不能总给市场“发号施令”，而要集中精力做好自己“该做的工作”。他开门见山对参会者说：“请各位为《政府工作报告》提出宝贵意见。”",
         "CommentDate" : "2015-01-28T16:07:00.000Z"
       } ],
       "AlternateName" : "BText",
@@ -933,6 +993,22 @@
         "AddressLine3" : "2nd Floor",
         "AddressLine2" : "STE 300",
         "AddressLine1" : "75 NH Ave"
+      }, {
+        "StateProvince" : "UT",
+        "PostalCode" : "23564",
+        "IsPrimary" : true,
+        "Country" : "US",
+        "City" : "Salt Lake City",
+        "AlternateStateProvince" : "UT",
+        "AlternatePostalCode" : "23564",
+        "AlternateCountry" : "US",
+        "AlternateCity" : "Salt Lake City",
+        "AlternateAddressLine1" : "44 Another Rd",
+        "AddressType" : {
+          "Name" : "Primary",
+          "Code" : "Primary"
+        },
+        "AddressLine1" : "456 Old Stage Rd"
       }, {
         "StateProvince" : "NC",
         "PostalCode" : "27215",
