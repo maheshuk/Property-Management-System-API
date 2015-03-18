@@ -1,17 +1,40 @@
+HTTP/1.1 202 Accepted
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 640
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Ni-TrackingId: da3035d2-a1de-417b-8fe2-fb617b9e897a
+Ni-CorrelationId: e519da78-b135-4832-84ae-b880fa5ac77a
+Ni-TrackingUri: https://naas-dev.newmarketinc.com/API/Tracking/da3035d2-a1de-417b-8fe2-fb617b9e897a
+Ni-Status: Success
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 18 Mar 2015 18:21:55 GMT
+Connection: close
+
 {
-  "Status" : "Success",
-  "SenderType" : {
-    "Code" : "SandC"
+  "ExternalCreatedOn": "2015-03-18T18:21:55.289791Z",
+  "ResourceId": "Res1234567890[1204]",
+  "ResourceType": "Reservation",
+  "ResultMessages": [
+    {
+      "Level": "Info",
+      "Message": "Accepted the Reservation message for processing.",
+      "MessageCode": {
+        "Code": "Accepted",
+        "Name": "Successfully received for processing."
+      },
+      "ResourceId": "Res1234567890[1204]",
+      "ResourceType": "Reservation",
+      "ExtendedAttributes": []
+    }
+  ],
+  "SenderType": {
+    "Code": "NWS",
+    "Name": "Newmarket Web Services"
   },
-  "ResultMessages" : [ {
-    "MessageCode" : {
-      "Code" : "Updated"
-    },
-    "Message" : "Reservation was updated successfully in DelphiFDC.",
-    "Level" : "Info"
-  } ],
-  "ResourceType" : "Reservation",
-  "ResourceId" : "PMS1.Reservation1",
-  "ExternalCreatedOn" : "2015-02-05T23:42:00.000Z",
-  "CreatedOn" : "2015-02-05T23:42:00.000Z"
+  "Status": "Accepted",
+  "ExtendedAttributes": []
 }
