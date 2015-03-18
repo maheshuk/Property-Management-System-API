@@ -1,8 +1,26 @@
+POST https://naas-dev.newmarketinc.com/pms/Contact HTTP/1.1
+Content-Type: application/json
+Authorization: OAuth YbwwFwyA1k18fg5d0fDyCdSvJ7E+Lg4yHGPJeEKfFdKj2OPvDYbn6ZMTyF0WpFa9qQLLcSA7C5u1urLw0HfnN1ATfClDBySQh2towqiE/VmM0/En1Kr2zet6qxaq6NMFjCA+mSQ8MwEnss9xi0ZGOwIaYdlkGvRAhOPug2MQu5YX2IZlbY9BuX7BRKbYTQbm9d5dkcRv5pogZc3FZNN2Cby2OhDvr4R0+ikDtyltM030HYlcp+FSnHDZh7vuUBs0hUhnRJ2BwtKCBj5vVTRX+knDnag0mSTAqbpzI+6UImdoCrNXWzlWg7fjG7QsIT/+pix3IGkHTVBCXZHaDXpQUq5hdt8b5Fn5mSuvR46TbYaPlWu2NY6Ki/YMV9tq2C/Ti4zN5+Xfa75nnr6Bfy4pBzggGqtzSLfeoc5TYHj5CCgK088ti/34MoU8WRTzNd58F4L34e9U6ktVNVPc9y+Glsq3nL6yMPCz+/7xlX53573zvwrBMoTV4jvvjHBxUtO1WmsNZg5SvhTNMpC7submUaU+FuTdeQqtSJPG9XwydaG9gGrBsphlcUzl4V7lcHxhEFjsx8uvoxYYz118SiLP0spf0pzB1s5r/CC8TzhAEYJw1BNyp3BL1C6rlSqajSirPG1o1HkM+ZXv9j8kmhxzgqqQe4gImcNSlj1WJeKHh9loZHzZBdnTuTMYJTFNjp1RxCStxSADU/urkfgMnLrvVjBFUVupqF2KgcdxDUAhZNtFwHolqkA6Ne6Y2kgIOWyQRH+gESt+zW8QAXz/XHMkJ/BkIiaergn5Atfkg7Br31jBhjIqV5fGZKQ+CS7dMT9/8wWdPRVhRUER5GT4mpW4rFXeBCV5KtKiTX3K1dVqkefgsnXCw/TNiqEcG82rHx3m
+Host: naas-dev.newmarketinc.com
+Content-Length: 7695
+Expect: 100-continue
+Connection: Close
+
 {
   "RecordStatus" : "Active",
   "OriginalId" : "Contact1",
   "Id" : "PMS1.Contact1",
   "AdditionalIds" : [ {
+    "IdValue" : "IATA Value",
+    "IdType" : {
+      "Code" : "IATANumber"
+    }
+  }, {
+    "IdValue" : "taxIdValue1",
+    "IdType" : {
+      "Code" : "TaxId"
+    }
+  }, {
     "IdValue" : "ABC123",
     "IdType" : {
       "Code" : "IATANumber"
@@ -22,10 +40,10 @@
     "PhoneNumber" : "603-911-911",
     "LocationCode" : [ {
       "Name" : "Tampa Property",
-      "Code" : "Loc1"
+      "Code" : "242848"
     }, {
       "Name" : "Tampa Property",
-      "Code" : "Loc1"
+      "Code" : "242848"
     } ],
     "Email" : "ayoung@test.com",
     "CommunicationTypes" : [ "PreStay", "PostStay", "Confirmation", "Cancellation", "InHouse" ],
@@ -48,10 +66,10 @@
     },
     "LocationCode" : [ {
       "Name" : "Tampa Property",
-      "Code" : "Loc1"
+      "Code" : "242848"
     }, {
       "Name" : "Tampa Property",
-      "Code" : "Loc1"
+      "Code" : "242848"
     } ]
   } ],
   "SpouseName" : "Diana Young",
@@ -69,6 +87,25 @@
   "NumberOfChildren" : 3,
   "MiddleName" : "Flower",
   "Memberships" : [ {
+    "SignupDate" : "2015-03-13",
+    "ProgramType" : {
+      "Name" : "ProgramType1",
+      "Code" : "PROGTYPE1"
+    },
+    "ProgramCode" : {
+      "Name" : "Default Program Code",
+      "Code" : "PROGRAM"
+    },
+    "MembershipNumber" : "12345",
+    "MembershipLevel" : {
+      "Name" : "Default Membership Level",
+      "Code" : "LEVEL"
+    },
+    "ExpireDate" : "2015-03-31",
+    "EffectiveDate" : "2015-03-13",
+    "CurrentPointsDate" : "2015-03-13",
+    "CurrentPoints" : 50
+  }, {
     "SignupDate" : "2015-01-28",
     "ProgramType" : {
       "Name" : "ProgramType1",
@@ -91,7 +128,7 @@
     "PhoneNumber" : "603-911-911",
     "LocationCode" : [ {
       "Name" : "Tampa Property",
-      "Code" : "Loc1"
+      "Code" : "242848"
     } ],
     "Email" : "ayoung@test.com",
     "CommunicationOptInOut" : "OptIn",
@@ -104,16 +141,16 @@
   },
   "Locations" : [ {
     "Name" : "Tampa Property",
-    "Code" : "Loc1"
+    "Code" : "242848"
   }, {
     "Name" : "Tampa Property",
-    "Code" : "Loc1"
+    "Code" : "242848"
   }, {
     "Name" : "Tampa Property",
-    "Code" : "Loc1"
+    "Code" : "242848"
   }, {
     "Name" : "Tampa Property",
-    "Code" : "Loc1"
+    "Code" : "242848"
   } ],
   "LastName" : "Young",
   "LanguageCode" : {
@@ -126,7 +163,6 @@
   "Gender" : {
     "Code" : "Male"
   },
-  "FullName" : "Andy Young",
   "FirstName" : "Andy",
   "EmailAddresses" : [ {
     "IsPrimary" : true,
@@ -138,6 +174,15 @@
   "Department" : "Internal Operations",
   "DateOfBirth" : "1966-01-01",
   "Comments" : [ {
+    "Originator" : "Andy Young",
+    "IsPublic" : true,
+    "CommentType" : {
+      "Name" : "Comment Type2",
+      "Code" : "CMTTYP2"
+    },
+    "CommentText" : "Comment text goes here",
+    "CommentDate" : "2015-02-10T19:04:00.000Z"
+  }, {
     "Originator" : "PMSA",
     "IsPublic" : true,
     "CommentType" : {
@@ -153,7 +198,7 @@
       "Name" : "Comment Type2",
       "Code" : "CMTTYP2"
     },
-    "CommentText" : "Comment Text with chinese chracters:  1?26?,??????????,?????????????�??????�??????????,????????�????�,??????????�?????�???????????:�????�??????�???????�",
+    "CommentText" : "Comment Text with chinese chracters:  1月26日，李克强主持召开座谈会，听取专家学者和企业界人士对《政府工作报告》的意见建议。李克强说，政府不能总给市场“发号施令”，而要集中精力做好自己“该做的工作”。他开门见山对参会者说：“请各位为《政府工作报告》提出宝贵意见。”",
     "CommentDate" : "2015-01-28T16:07:00.000Z"
   } ],
   "AssistantName" : "Andy Young Sr.",
