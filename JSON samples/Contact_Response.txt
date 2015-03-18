@@ -1,21 +1,40 @@
+HTTP/1.1 202 Accepted
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 629
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Ni-TrackingId: c0644faa-b4cb-4f08-9243-d35636ea8c82
+Ni-CorrelationId: 2560e500-1b26-4640-b0c6-98d32983eb28
+Ni-TrackingUri: https://naas-dev.newmarketinc.com/API/Tracking/c0644faa-b4cb-4f08-9243-d35636ea8c82
+Ni-Status: Success
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 18 Mar 2015 17:56:41 GMT
+Connection: close
+
 {
-  "Status" : "Accepted",
-  "SenderType" : {
-    "Code" : "Nws"
+  "ExternalCreatedOn": "2015-03-18T17:56:38.3971898Z",
+  "ResourceId": "PMS1.Contact1[1204]",
+  "ResourceType": "Contact",
+  "ResultMessages": [
+    {
+      "Level": "Info",
+      "Message": "Accepted the Contact message for processing.",
+      "MessageCode": {
+        "Code": "Accepted",
+        "Name": "Successfully received for processing."
+      },
+      "ResourceId": "PMS1.Contact1[1204]",
+      "ResourceType": "Contact",
+      "ExtendedAttributes": []
+    }
+  ],
+  "SenderType": {
+    "Code": "NWS",
+    "Name": "Newmarket Web Services"
   },
-  "ResultMessages" : [ {
-    "ResourceType" : "Contact",
-    "ResourcePart" : "1",
-    "ResourceId" : "PMS1.Contact1",
-    "MessageCode" : {
-      "Name" : "Message was accepted for further processing",
-      "Code" : "Accepted"
-    },
-    "Message" : "Message was accepted and queued for further processing.",
-    "Level" : "Info"
-  } ],
-  "ResourceType" : "Contact",
-  "ResourceId" : "PMS1.Contact1",
-  "ExternalCreatedOn" : "2015-02-05T23:34:00.000Z",
-  "CreatedOn" : "2015-02-05T23:34:00.000Z"
+  "Status": "Accepted",
+  "ExtendedAttributes": []
 }
