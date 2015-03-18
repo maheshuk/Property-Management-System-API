@@ -1,21 +1,40 @@
+HTTP/1.1 202 Accepted
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 693
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Ni-TrackingId: c94b13b5-000f-4e8f-a1d6-e69490a19516
+Ni-CorrelationId: 79f135d8-2e7d-49e3-a53d-2c348fae169d
+Ni-TrackingUri: https://naas-dev.newmarketinc.com/API/Tracking/c94b13b5-000f-4e8f-a1d6-e69490a19516
+Ni-Status: Success
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 18 Mar 2015 18:08:30 GMT
+Connection: close
+
 {
-  "Status" : "Accepted",
-  "SenderType" : {
-    "Code" : "Nws"
+  "ExternalCreatedOn": "2015-03-18T18:08:26.8824545Z",
+  "ResourceId": "c94b13b5-000f-4e8f-a1d6-e69490a19516[1204]",
+  "ResourceType": "InventorySync",
+  "ResultMessages": [
+    {
+      "Level": "Info",
+      "Message": "Accepted the InventorySync message for processing.",
+      "MessageCode": {
+        "Code": "Accepted",
+        "Name": "Successfully received for processing."
+      },
+      "ResourceId": "c94b13b5-000f-4e8f-a1d6-e69490a19516[1204]",
+      "ResourceType": "InventorySync",
+      "ExtendedAttributes": []
+    }
+  ],
+  "SenderType": {
+    "Code": "NWS",
+    "Name": "Newmarket Web Services"
   },
-  "ResultMessages" : [ {
-    "ResourceType" : "Reservation",
-    "ResourcePart" : "1",
-    "ResourceId" : "PMS1.Reservation1",
-    "MessageCode" : {
-      "Name" : "Message was accepted for further processing",
-      "Code" : "Accepted"
-    },
-    "Message" : "Message was accepted and queued for further processing.",
-    "Level" : "Info"
-  } ],
-  "ResourceType" : "Reservation",
-  "ResourceId" : "PMS1.Reservation1",
-  "ExternalCreatedOn" : "2015-02-05T23:34:00.000Z",
-  "CreatedOn" : "2015-02-05T23:34:00.000Z"
+  "Status": "Accepted",
+  "ExtendedAttributes": []
 }
