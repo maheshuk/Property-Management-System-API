@@ -1,3 +1,11 @@
+POST https://naas-dev.newmarketinc.com/pms/ReservationActuals HTTP/1.1
+Content-Type: application/json
+Authorization: OAuth YbwwFwyA1k18fg5d0fDyCdSvJ7E+Lg4yHGPJeEKfFdKj2OPvDYbn6ZMTyF0WpFa9qQLLcSA7C5u1urLw0HfnN1ATfClDBySQh2towqiE/VmM0/En1Kr2zet6qxaq6NMFjCA+mSQ8MwEnss9xi0ZGO5ogySaqqfFi+pCArqyLFpJf9rq94BH+3mLW4bPzeeazAxLGPl9BxHI5g1FX7SI5U9f2NHyEbxvOsEIb8nDpLCkvIsY1oEVRBnJTFNXWsYPr2j2xcTI3uoaS+5XbqhfQRkGMII6rG6b1aW9u4TtcbIQuyFj1elyHD2SJ7i58NktCK4JM+dIYXQ0xTTYj2hlNG6ar50owTh/45p3ZEJcn9a1jRi/iArKgGlAGFme5FUgPe9JrXmpwRiY9bqFNsWgZNSTrPDwaCEsX+Uq8lUjgbtvJfzptxQbGEVFOPtRhwQ/Fq3nZb0Ls/XqwVZr2pAxsB9iJon1CeaAT0Mi09VqjSrVWb63w30wP01Nvgg75GId3AmUq9f/VU+ID255eHtTvpHoOPYX2zRz7dkPchbWdvUOKl0pFdUKwTSo+oefbuuAhz9Yo3K/3//GpnjTqWuL9ffisC4fVQhSwmoV1k5abqlw/aKF3hE97Yoc3jiMxQ8zix0E4e30ITzwTPgsyS5re0roBNgD83Zz+vI7+2SMUafASFnuAKb1C6sGOJbf44RngDgMg6DdGMvV8FgNnmi6HiGoI3JPRrZtvKG4zW0AOCwm0bnsIegXXk0N+NBL6gC0vutGm0JLMcDQ2uqz6gGys1aYzBaa3xNS3nyTG1PlC71ipjSm9k6Jq2/AJ7G5sfIeDiEupxrbO3KLlUzrqZxKa0w4o59MOKdIlgarr29Vv4INwYm3J7T3cTIHfmuNEPZsU
+Host: naas-dev.newmarketinc.com
+Content-Length: 2175
+Expect: 100-continue
+Connection: Close
+
 {
   "Status" : "CheckedOut",
   "ReservationId" : "Res1234567890",
@@ -79,6 +87,12 @@
     "CurrencyCode" : "USD"
   } ],
   "PmsStatus" : "CheckedOut",
+  "LocationInfo" : {
+    "LocationCode" : {
+      "Name" : "Newmarket Portsmouth",
+      "Code" : "NMKTPORTS"
+    }
+  },
   "IsStayComplete" : true,
   "DepartureDate" : "2015-02-02",
   "ArrivalDate" : "2015-02-02"
