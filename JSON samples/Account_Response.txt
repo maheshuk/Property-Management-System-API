@@ -1,21 +1,40 @@
+HTTP/1.1 202 Accepted
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 618
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Ni-TrackingId: da778a3b-9e29-45cf-b46a-4f4d7fa75116
+Ni-CorrelationId: 894df35d-c890-4cb0-b510-8d9f651a8ed9
+Ni-TrackingUri: https://naas-dev.newmarketinc.com/API/Tracking/da778a3b-9e29-45cf-b46a-4f4d7fa75116
+Ni-Status: Success
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 18 Mar 2015 16:24:49 GMT
+Connection: close
+
 {
-  "Status" : "Accepted",
-  "SenderType" : {
-    "Code" : "Nws"
+  "ExternalCreatedOn": "2015-03-18T16:24:45.180376Z",
+  "ResourceId": "48392650[1204]",
+  "ResourceType": "Account",
+  "ResultMessages": [
+    {
+      "Level": "Info",
+      "Message": "Accepted the Account message for processing.",
+      "MessageCode": {
+        "Code": "Accepted",
+        "Name": "Successfully received for processing."
+      },
+      "ResourceId": "48392650[1204]",
+      "ResourceType": "Account",
+      "ExtendedAttributes": []
+    }
+  ],
+  "SenderType": {
+    "Code": "NWS",
+    "Name": "Newmarket Web Services"
   },
-  "ResultMessages" : [ {
-    "ResourceType" : "Account",
-    "ResourcePart" : "1",
-    "ResourceId" : "PMS1.Account1",
-    "MessageCode" : {
-      "Name" : "Message was accepted for further processing",
-      "Code" : "Accepted"
-    },
-    "Message" : "Message was accepted and queued for further processing.",
-    "Level" : "Info"
-  } ],
-  "ResourceType" : "Account",
-  "ResourceId" : "PMS1.Account1",
-  "ExternalCreatedOn" : "2015-02-05T23:34:00.000Z",
-  "CreatedOn" : "2015-02-05T23:34:00.000Z"
+  "Status": "Accepted",
+  "ExtendedAttributes": []
 }
