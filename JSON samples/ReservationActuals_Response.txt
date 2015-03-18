@@ -1,17 +1,40 @@
+HTTP/1.1 202 Accepted
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 708
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Ni-TrackingId: 8a5c4ecd-4986-49dd-a392-e6a67caa0f13
+Ni-CorrelationId: b272c234-6bb2-47d5-8596-43dc936a5499
+Ni-TrackingUri: https://naas-dev.newmarketinc.com/API/Tracking/8a5c4ecd-4986-49dd-a392-e6a67caa0f13
+Ni-Status: Success
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 18 Mar 2015 18:19:35 GMT
+Connection: close
+
 {
-  "Status" : "Success",
-  "SenderType" : {
-    "Code" : "SandC"
+  "ExternalCreatedOn": "2015-03-18T18:19:34.8561377Z",
+  "ResourceId": "8a5c4ecd-4986-49dd-a392-e6a67caa0f13[1204]",
+  "ResourceType": "ReservationActuals",
+  "ResultMessages": [
+    {
+      "Level": "Info",
+      "Message": "Accepted the ReservationActuals message for processing.",
+      "MessageCode": {
+        "Code": "Accepted",
+        "Name": "Successfully received for processing."
+      },
+      "ResourceId": "8a5c4ecd-4986-49dd-a392-e6a67caa0f13[1204]",
+      "ResourceType": "ReservationActuals",
+      "ExtendedAttributes": []
+    }
+  ],
+  "SenderType": {
+    "Code": "NWS",
+    "Name": "Newmarket Web Services"
   },
-  "ResultMessages" : [ {
-    "MessageCode" : {
-      "Code" : "Updated"
-    },
-    "Message" : "ReservationActuals was processed successfully in DelphiFDC.",
-    "Level" : "Info"
-  } ],
-  "ResourceType" : "Reservation",
-  "ResourceId" : "PMS1.Reservation1",
-  "ExternalCreatedOn" : "2015-02-05T23:42:00.000Z",
-  "CreatedOn" : "2015-02-05T23:42:00.000Z"
+  "Status": "Accepted",
+  "ExtendedAttributes": []
 }
