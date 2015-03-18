@@ -1,27 +1,32 @@
+POST https://naas-dev.newmarketinc.com/pms/Result HTTP/1.1
+Content-Type: application/json
+Authorization: OAuth YbwwFwyA1k18fg5d0fDyCdSvJ7E+Lg4yHGPJeEKfFdKj2OPvDYbn6ZMTyF0WpFa9qQLLcSA7C5u1urLw0HfnN1ATfClDBySQh2towqiE/VmM0/En1Kr2zet6qxaq6NMFjCA+mSQ8MwEnss9xi0ZGOwjaIca8m1pVByM59EaW7HqHR839w5pn4vR245Jz9tDWsQcmth/WxTXHK5myK3hZuv1Ayy6HtMJf6YvYngs096PJi6mjeTW2UrStSNc9Y9fhdL28qP/srhWFmo6SclL4qAe9TAGff8eZw4l3cLEAiZ4rvTqfX3PfUecUCGXY4VXCUCkmYZGYXU/2bRHB/7ySVq007DOWpG9yfr9pw4Kug1KtHiafbZKfpRcAIcJKb2Xqh1Fdc6X05yh6R4hexgH4nNMKB80/4XJL1e15ynn89AC/t4DwN3pOLipcxFut7ePQLMFn7OtBYgWJ2Gx9FNYPtzFdXkk1qx9qg8062QGIsFSHRg+6ghUYBbzBYFxauf7hc51Gw7GjPoxMUqchFrJ9NZjaG4DpMI5hqaNPpHMvumSVeHpciNh76nnlstF4v2I8u8Z7Ubk4i4HgehFyXduz7HjPWy0xdiLz/1lA/N46z2+csERIaMhre7WAzAgsc+Y7HuIkWjNuvrwmYGRri0fDEnHOxDvpNalqa/5Ki+xjpi117KH1z+McM1U06SssCIgY3FmlGlTD1v1c+barQpBMojV3HCTyRxfGCIlXT6rom2qrsiEhhtLPFSsRFDyr4nb7/SdGRwCgvM57YWmU4HBxCTw1HAmgpmp4Yrp4MOdkFi3nZ5KSg7p9gTzu7OhCY4Y2uGXP7Tevz3hGh/FqWKDuWnhBVSFf4OTOHQg0IrCA1eEAB3LxgL4s11xC7dM48mNp
+Host: naas-dev.newmarketinc.com
+Content-Length: 666
+Expect: 100-continue
+Connection: Close
+
 {
-  "Status" : "Failure",
-  "SenderType" : {
-    "Code" : "Nws"
-  },
-  "ResultMessages" : [ {
-    "Timestamp" : "2015-02-23T13:29:00.000Z",
-    "ResourceType" : "PmsRoomBlock",
-    "ResourcePart" : "2",
-    "ResourceId" : "PMS1.PmsRoomBlock1",
-    "MessageCode" : {
-      "Code" : "Required Field Violation"
-    },
-    "Message" : "A required field is missing.",
-    "Level" : "Error"
-  } ],
-  "ResourceType" : "PmsRoomBlock",
-  "ResourceId" : "Pms1.PmsRoomBlock1",
-  "LocationInfo" : {
-    "LocationCode" : {
-      "Name" : "Newmarket Portsmouth",
-      "Code" : "NMKTPORTS"
+  "ExternalCreatedOn": "2015-03-18T18:11:55.1940826Z",
+  "ResourceId": "PMS1.PmsRoomBlock1_Test1[1204]",
+  "ResourceType": "PmsRoomBlock",
+  "ResultMessages": [
+    {
+      "Level": "Info",
+      "Message": "Accepted the PmsRoomBlock message for processing.",
+      "MessageCode": {
+        "Code": "Accepted",
+        "Name": "Successfully received for processing."
+      },
+      "ResourceId": "PMS1.PmsRoomBlock1_Test1[1204]",
+      "ResourceType": "PmsRoomBlock",
+      "ExtendedAttributes": []
     }
+  ],
+  "SenderType": {
+    "Code": "NWS",
+    "Name": "Newmarket Web Services"
   },
-  "ExternalCreatedOn" : "2015-01-27T20:16:00.000Z",
-  "CreatedOn" : "2015-01-27T20:16:00.000Z"
+  "Status": "Accepted",
+  "ExtendedAttributes": []
 }
